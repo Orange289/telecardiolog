@@ -1,0 +1,31 @@
+.feedback {
+  width: 273px;
+  background-color: #475d71;
+  padding-bottom: 32px;
+
+  p {
+    @include font-param(14px, 17px, 400, #ffffff);
+    text-align: center;
+  }
+
+}
+
+.feedback__form {
+  padding-top: 10px;
+  padding-left: 36px;
+  padding-right: 36px;
+
+  input {
+    @include font-param(14px, 10px, 400, #94a2af);
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    width: 100%;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+  }
+
+}

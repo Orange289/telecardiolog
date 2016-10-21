@@ -1,0 +1,95 @@
+@font-face {
+	@include font-setup($font-fam-1, $font-1-local, $font-1-url1, $font-1-url2);
+  font-weight: 400;
+}
+@font-face {
+	@include font-setup($font-fam-1, $font-2-local, $font-2-url1, $font-2-url2);
+  font-weight: 700;
+}
+@font-face {
+	@include font-setup($font-fam-1, $font-3-local, $font-3-url1, $font-3-url2);
+  font-weight: 300;
+}
+@font-face {
+	@include font-setup($font-fam-1, $font-4-local, $font-4-url1, $font-4-url2);
+  font-weight: 600;
+}
+@font-face {
+	@include font-setup($font-fam-1, $font-5-local, $font-5-url1, $font-5-url2);
+  font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	@include font-setup($font-fam-2, $font-6-local, $font-6-url1, $font-6-url2);
+  font-weight: 400;
+}
+@font-face {
+	@include font-setup($font-fam-2, $font-7-local, $font-7-url1, $font-7-url2);
+  font-weight: 700;
+}
+
+.page-body {
+  font-family: 'OpenSans', 'Arial', sans-serif;
+  @include font-param(16px, 20px, 400);
+	background-color: #ffffff;
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.page-body__user-block {
+  float: right;
+  padding-right: 23px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 172px;
+
+	&--footer {
+		padding-top: 30px;	
+	}
+
+}
+
+.page-body__user-item {
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	@include font-param(14px, 11px, 600);
+	text-transform: uppercase;
+}
+
+.page-body__user-item:nth-of-type(1) {
+  margin-right: 9px;
+}
+
+.page-body__logo {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  @include font-param(24px,18px, 600);
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 25px;
+  padding-left: 23px;
+}
+
+.page-body__logo-text {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+
+  span:nth-of-type(1) {
+    color: #789bc6;
+  }
+
+  span:nth-of-type(2) {
+    color: #21cede;
+  }
+
+}
+
+.page-body__logo-span {
+  font-family: 'OpenSans', 'Arial', sans-serif;
+  @include font-param(14px, 11px, 300, #000000);
+  text-transform: lowercase;
+  display: block;
+  margin-top: 3px;
+}

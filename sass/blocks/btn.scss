@@ -1,0 +1,43 @@
+.btn {
+  @include font-param(16px, 14px, 600);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--header {
+    color: #ffffff;
+    position: absolute;
+    top: 396px;
+    left: 37%;
+    padding: 20px 48px;
+    background-color: #406592;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+
+  &--promo {
+    color: #406592;
+    float: right;
+    padding: 20px 18px;
+    margin-right: 55px;
+    margin-top: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+
+  &--feedback {
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    color: #ffffff;
+    margin-top: 24px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #406592;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+}

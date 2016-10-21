@@ -1,0 +1,65 @@
+.partners {
+  width: 570px;
+  background-image: url('../../img/bg-partners.jpg');
+
+  p {
+    @include font-param(14px, 19px, 400, #ffffff);
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 74px;
+    width: 280px;
+  }
+
+}
+
+.partners__list {
+  padding-top: 57px;
+}
+
+.partners__item {
+  display: none;
+}
+
+.partners__logo {
+  text-align: center;
+  display: block;
+}
+
+.partners__name {
+  @include font-param(14px, 21px, 400, #ffffff);
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+}
+
+.partners__prev,
+.partners__next {
+  position: relative;
+}
+
+.partners__next::before,
+.partners__prev::before {
+  content: '';
+  position: absolute;
+  top: 84px;
+  left: 0;
+  @include size(10px);
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.partners__prev::before {
+  transform: rotate(45deg);
+  left: 21px;
+}
+
+.partners__next::before {
+  transform: rotate(-135deg);
+  left: 536px;
+}
+
+@include partner(1);
+@include partner(2);
+@include partner-slider(3);

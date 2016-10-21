@@ -1,0 +1,6 @@
+.container {
+  width: 1145px;
+  margin: 0 auto;
+  background-color: transparent;
+  @include clearfix();
+}

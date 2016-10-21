@@ -1,0 +1,30 @@
+.advantages {
+  padding-top: 52px;
+  padding-bottom: 58px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.advantages__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 38px;
+}
+
+.advantages__item {
+  width: 166px;
+
+  b {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    @include font-param(30px, 25px, 400, #21cede);
+    text-align: center;
+    display: block;
+  }
+
+  p {
+    @include font-param(12px, 19px, 400, #294b83);
+    text-align: center;
+    margin: 0;
+  }
+
+}

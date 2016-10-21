@@ -1,0 +1,38 @@
+.reviews {
+  position: relative;
+  padding-top: 52px;
+  padding-bottom: 39px;
+  background: url('../../img/bg-reviews.jpg');
+  background-size: cover;
+}
+
+.reviews__content {
+  @include font-param(18px, 26px, 400, #ffffff);
+  font-style: italic;
+  text-align: center;
+  width: 578px;
+  margin: 0 auto;
+}
+
+.reviews__item {
+  display: none;
+}
+
+.reviews__author {
+  @include font-param(12px, 9px, 400, #ffffff);
+  font-style: normal;
+  text-align: center;
+  display: block;
+  padding-top: 36px;
+}
+
+.reviews__toggles {
+  position: absolute;
+  top: 121px;
+  left: 48%;
+}
+
+@include review(1);
+@include review(2);
+@include toggle(reviews-input-1);
+@include toggle(reviews-input-2);

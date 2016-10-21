@@ -1,0 +1,17 @@
+.main-nav__list {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+  display: inline-block;
+  padding-left: 55px;
+}
+
+.main-nav__item {
+  display: inline-block;
+  padding-right: 22px;
+
+  a {
+    @include font-param(14px, 11px, 600, #406592);
+  }
+
+}

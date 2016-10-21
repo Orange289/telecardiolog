@@ -1,0 +1,27 @@
+.questions {
+  width: 273px;
+  background-color: #475d71;
+}
+
+.questions__list {
+  padding-top: 34px;
+}
+
+.questions__item {
+  @include font-param(14px, 21px, 400, #ffffff);
+  text-align: center;
+  display: block;
+
+  &:nth-of-type(1) {
+    padding-bottom: 48px;
+  }
+
+  &:nth-of-type(2) {
+    padding-bottom: 22px;
+  }
+
+}
+
+.questions__item:hover {
+  color: rgba(255, 255, 255, 0.3);
+}

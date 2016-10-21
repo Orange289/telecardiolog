@@ -1,0 +1,84 @@
+.page-main {
+  position: relative;
+}
+
+.page-main__title {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  @include font-param(36px, 27px, 700, #406592);
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding-bottom: 13px;
+
+  &--service,
+  &--reviews {
+    color: #ffffff;
+  }
+
+  &--doctors {
+    color: #21cede;
+  }
+
+}
+
+.page-main__description {
+  @include font-param(16px, 20px, 400);
+  text-align: center;
+  margin: 0 auto;
+  width: 571px;
+
+  &--service {
+    color: #ffffff;
+    width: 449px;
+  }
+
+  &--doctors {
+    color: #294b83;
+  }
+
+}
+
+.page-main__promo {
+  position: absolute;
+  top: -33px;
+  left: 3%;
+  right: 3%;
+  @include clearfix();
+  padding-left: 22px;
+  padding-top: 34px;
+  padding-bottom: 50px;
+  background-color: #21cede;
+  border-radius: 5px;
+
+  b {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    @include font-param(48px, 36px, 400, #ffffff);
+    display: block;
+  }
+
+  p {
+    @include font-param(16px, 20px, 400, #ffffff);
+    float: left;
+    padding-top: 5px;
+    width: 338px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    @include size(100%, 36px);
+    background-color: #21cede;
+    border-radius: 5px;
+    transform: skewY(1deg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 180px;
+    left: 220px;
+    @include triangle(32px, 32px, #21cede, -90deg);
+  }
+}

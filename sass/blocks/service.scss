@@ -1,0 +1,87 @@
+.service {
+  padding-top: 50px;
+  padding-bottom: 85px;
+  background: url('../../img/bg-service.jpg') no-repeat;
+  background-size: cover;
+}
+
+.service__title {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  @include font-param(24px, 33px, 700, #ffffff);
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.service__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 784px;
+}
+
+.service__item {
+  width: 216px;
+  padding-top: 152px;
+  position: relative;
+}
+
+.service__description::before {
+  content: '';
+  position: absolute;
+  top: -130px;
+  background-image: url('../../img/sprite.png');
+}
+
+.service__description {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  @include font-param(18px, 27px, 700, #ffffff);
+  text-align: center;
+  position: relative;
+
+  &--cons::before {
+    @include size(69px, 72px);
+    background-position: -199px -15px;
+    left: 68px;
+  }
+
+  &--checkin::before {
+    @include size(72px);
+    background-position: -97px -15px;
+    left: 70px;
+  }
+
+  &--call::before {
+    @include size(52px, 84px);
+    background-position: -15px -15px;
+    left: 80px;
+  }
+
+}
+
+
+
+.service__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 31px;
+  @include size(147px);
+  border: 3px dotted #ffffff;
+  border-radius: 100%;
+}
+
+.service__item::after {
+  content: '';
+  position: absolute;
+  top: 76px;
+  left: 182px;
+  @include size(133px, 0);
+  border: 1px solid #ffffff;
+}
+
+.service__item:last-child::after {
+  display: none;
+}

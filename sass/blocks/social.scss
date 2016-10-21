@@ -1,0 +1,26 @@
+.social {
+  background-image: url('../../img/sprite.png');
+  top: 20px;
+
+  &--fb {
+    position: absolute;
+    left: 0;
+    @include size(6px, 12px);
+    background-position: -298px -15px;
+  }
+
+  &--tw {
+    position: absolute;
+    left: 30px;
+    @include size(12px, 10px);
+    background-position: -376px -15px;
+  }
+
+  &--goo {
+    position: absolute;
+    left: 60px;
+    @include size(12px, 12px);
+    background-position: -334px -15px;
+  }
+
+}
