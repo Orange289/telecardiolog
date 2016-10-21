@@ -694,7 +694,7 @@ template {
   .page-main__promo::after {
     content: '';
     position: absolute;
-    top: 180px;
+    top: 178px;
     left: 220px;
     width: 0;
     height: 0;

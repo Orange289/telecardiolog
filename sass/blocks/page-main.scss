@@ -77,7 +77,7 @@
   &::after {
     content: '';
     position: absolute;
-    top: 180px;
+    top: 178px;
     left: 220px;
     @include triangle(32px, 32px, #21cede, -90deg);
   }
