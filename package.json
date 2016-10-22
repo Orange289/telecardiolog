@@ -28,7 +28,7 @@
   },
   "scripts": {
     "test": "editorconfig-tools check *",
-    "build": "gulp build",
+    "build": "gulp style",
     "start": "gulp serve"
   },
   "engines": {

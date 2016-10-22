@@ -510,7 +510,7 @@ template {
 .page-header {
   position: relative;
   padding-bottom: 479px;
-  background: url("../../img/bg-header.jpg") no-repeat;
+  background: url("../img/bg-header.jpg") no-repeat;
   background-size: cover; }
   .page-header a {
     color: #ffffff; }
@@ -752,7 +752,7 @@ template {
 .service {
   padding-top: 50px;
   padding-bottom: 85px;
-  background: url("../../img/bg-service.jpg") no-repeat;
+  background: url("../img/bg-service.jpg") no-repeat;
   background-size: cover; }
 
 .service__title {
@@ -782,7 +782,7 @@ template {
   content: '';
   position: absolute;
   top: -130px;
-  background-image: url("../../img/sprite.png"); }
+  background-image: url("../img/sprite.png"); }
 
 .service__description {
   font-family: 'Cuprum', 'Arial', sans-serif;
@@ -1060,7 +1060,7 @@ template {
   padding-top: 5px; }
 
 .social {
-  background-image: url("../../img/sprite.png");
+  background-image: url("../img/sprite.png");
   top: 20px; }
   .social--fb {
     position: absolute;
@@ -1105,7 +1105,7 @@ template {
 
 .partners {
   width: 570px;
-  background-image: url("../../img/bg-partners.jpg"); }
+  background-image: url("../img/bg-partners.jpg"); }
   .partners p {
     font-size: 14px;
     line-height: 19px;
